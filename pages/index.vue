@@ -1,3 +1,4 @@
-<template>
-    <h1>AA</h1>
-</template>
+<script setup lang="ts">
+//redirect to login
+navigateTo("/admin/login")
+</script>

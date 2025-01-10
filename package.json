@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@auth0/auth0-vue": "^2.3.3",
     "@neondatabase/serverless": "^0.10.4",
     "drizzle-orm": "^0.38.3",
     "nuxt": "^3.15.1",
+    "nuxt-lucide-icons": "^1.0.5",
     "uuid": "^11.0.5",
     "vue": "latest",
     "vue-router": "latest"
