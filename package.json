@@ -13,6 +13,7 @@
     "@neondatabase/serverless": "^0.10.4",
     "drizzle-orm": "^0.38.3",
     "nuxt": "^3.15.1",
+    "uuid": "^11.0.5",
     "vue": "latest",
     "vue-router": "latest"
   },
