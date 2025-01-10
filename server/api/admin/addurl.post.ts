@@ -59,18 +59,8 @@ export default defineEventHandler(async (event) => {
         const insert = await db.insert(urls).values({ longUrl: body.longUrl, shortUrl: shortUrl })
 
         return {
-            statusCode: 200,
+            statusCode: 201,
             body: "Lien ajouté ! Lien raccourci : " + shortUrl
         }
-    }
-
-
-
-
-
-    /* return {
-        statusCode: 200,
-        body: response.longUrl
-    } */
-    
+    }    
 })
