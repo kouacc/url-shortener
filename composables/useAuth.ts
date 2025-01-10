@@ -22,9 +22,12 @@ export function useAuth() {
         auth0?.logout();
     };
 
+    const user = useAuth0().user
+
     return {
         isAuthenticated,
         login,
         logout,
+        user,
     };
 }

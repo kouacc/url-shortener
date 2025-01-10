@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply font-semibold font-sans text-3xl;
+    }
+
+    body {
+        @apply bg-gradient-to-br from-indigo-600 to-blue-400 text-white;
+    }
+}
+
+@layer components {
+    .paper-grid {
+        --size: 45px;
+        --line: color-mix(in lch, canvasText, transparent 70%);
+        background: linear-gradient(
+          90deg,
+          var(--line) 1px,
+          transparent 1px var(--size)
+        )
+        50% 50% / var(--size) var(--size),
+      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+        var(--size) var(--size);
+        mask: linear-gradient(103deg, #000 -43.49%, rgba(0, 0, 0, 0.02) 70.54%);
+        @apply h-screen w-screen relative z-0 top-0 inset-0
+    }
+}
+
+@layer utilities {
+    .container {
+        @apply max-w-screen-2xl mx-auto px-4;
+    }
+}
